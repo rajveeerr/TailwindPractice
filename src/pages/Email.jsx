@@ -28,7 +28,7 @@ export default function Email(){
     let redirect=()=>{
         console.log(data)
         if(!data.age){
-            nav("/verification")
+            nav("/")
         }
     }
     useEffect(()=>{
