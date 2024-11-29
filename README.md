@@ -1,6 +1,6 @@
 # Tailwind Practice Project - Week 13(100xDevs Cohort)
 
-This project was created during Week 13 of the 100xDevs Cohort, where we were learning **Tailwind CSS**. After covering the basics, our mentor, **Harkirat**, challenged us to replicate specific designs using only Tailwind CSS—no additional logic. 
+I created these pages during Week 13 of the 100xDevs Cohort, where I was learning **Tailwind CSS**. After covering the basics,  **Harkirat**, assigned us to replicate specific designs using only Tailwind CSS—no additional logic. 
 
 Instead of simply replicating the designs, I decided to take it a step further. Here's what I achieved:
 
@@ -18,13 +18,13 @@ Instead of simply replicating the designs, I decided to take it a step further. 
 ### Live Deployment
 
 Check out the live version of the project here:  
-https://tailwind-practice-seven.vercel.app
+https://tailwind-practice-seven.vercel.app/\
 
 ### Screenshots
 
 1. **Screenshots**  
 
-| **Category**                  | **Harkirat's Provided Designs**                                                                                                   | **Your Work**                                                                                                            |
+| **Category**                  | **Harkirat's Provided Designs**                                                                                                   | **My Work**                                                                                                            |
 |-------------------------------|-----------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
 | **Screenshot 1**       | ![Harkirat's Design 1](https://github.com/user-attachments/assets/780d1cf7-94c4-4a20-96f9-39bf01cec4c0)                         | ![Your Work 1](https://github.com/user-attachments/assets/91398948-ace3-44d8-8cc3-7abbdf58216d)                          |
 | **Screenshot 2**       | ![Harkirat's Design 2](https://github.com/user-attachments/assets/c62a8039-3976-4a28-96db-03b1dc95be11)                         | ![Your Work 2](https://github.com/user-attachments/assets/3b089c78-3271-4462-86d2-ccb7eab66af4)                          |
@@ -34,8 +34,8 @@ https://tailwind-practice-seven.vercel.app
 
 ### **Its Responsive too**
 
-1. ![Your Work 4](https://github.com/user-attachments/assets/6a04d35b-4b5a-4b0f-8b46-ab1c120a4cf4)
-2. ![Your Work 5](https://github.com/user-attachments/assets/a9d04f24-0a0c-4012-8ea5-b85bf9c54d18)
+1. ![My Work 4](https://github.com/user-attachments/assets/6a04d35b-4b5a-4b0f-8b46-ab1c120a4cf4)
+2. ![My Work 5](https://github.com/user-attachments/assets/a9d04f24-0a0c-4012-8ea5-b85bf9c54d18)
 
 ---
 

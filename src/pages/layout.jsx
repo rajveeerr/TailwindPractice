@@ -8,7 +8,7 @@ import { StepCountContext } from "../context/stepCountContext";
 export default function Layout(){
     let {step}=useContext(StepCountContext)
     let routeIndexMap={
-        "1":"/verification",
+        "1":"/",
         "2":"/email",
         "3":"/otp-verification",
     }
