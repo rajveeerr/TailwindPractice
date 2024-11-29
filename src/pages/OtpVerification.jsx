@@ -21,7 +21,7 @@ export default function OTP(){
 
     let redirect=()=>{
         if(!data.age){
-            nav("/verification")
+            nav("/")
         }
         else if(!data.email){
             nav("/email")
