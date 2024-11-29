@@ -18,7 +18,7 @@ Instead of simply replicating the designs, I decided to take it a step further. 
 ### Live Deployment
 
 Check out the live version of the project here:  
-[https://tailwind-practice-9i41-8mhkgva03-rajveeerrs-projects.vercel.app/](https://tailwind-practice-9i41-8mhkgva03-rajveeerrs-projects.vercel.app/)  
+https://tailwind-practice-seven.vercel.app
 
 ### Screenshots
 
