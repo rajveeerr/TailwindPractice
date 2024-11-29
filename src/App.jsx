@@ -42,7 +42,7 @@ function App() {
     // the typed value was in the input
 
   let allRoutes=[{
-    path: '/verification',
+    path: '/',
     element: <AgeVerification/>
   },{
     path: '/email',
