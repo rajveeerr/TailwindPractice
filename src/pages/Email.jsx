@@ -16,7 +16,7 @@ export default function Email(){
     let submitHandeler= ()=>{
       if(valid){
         saveData(setData,{email:input.current.value})
-        nav("/otp-verification")
+        nav("/register/otp-verification")
       }
     }
     
@@ -28,7 +28,7 @@ export default function Email(){
     let redirect=()=>{
         console.log(data)
         if(!data.age){
-            nav("/")
+            nav("/register/age")
         }
     }
     useEffect(()=>{

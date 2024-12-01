@@ -4,9 +4,11 @@ import Email from './pages/Email'
 import AgeVerification from './pages/AgeVerification'
 import Layout from './pages/layout'
 import OTP from './pages/OtpVerification'
-import Home from './pages/Home'
 import { Suspense } from 'react'
 import { StepCountProvider } from './context/stepCountContext'
+import Dashboard from './pages/Dashboard'
+import { RecoilRoot } from 'recoil'
+import {ChatBot} from '10xanswers'
 
 function App() {
   // why do we use tailwing if its ugly and gets long? well bcz it allows us to do our own styling
@@ -41,32 +43,55 @@ function App() {
     // the input value, we did updated the state var as a result new input with the updated value was rendered, only for a brief period
     // the typed value was in the input
 
-  let allRoutes=[{
-    path: '/',
+  let allRegistrationRoutes=[{
+    path: '/register/age',
     element: <AgeVerification/>
   },{
-    path: '/email',
+    path: '/register/email',
     element: <Email/>
   },{
-    path: '/otp-verification',
+    path: '/register/otp-verification',
     element: <OTP/>
   },{
-    path: '/home',
-    element: <Home/>
+    path: '/',
+    element: <AgeVerification/>
   }]
 
   return (<div>
+    <RecoilRoot>
     <Suspense fallback={"Loading..."}>
       <StepCountProvider>
         <BrowserRouter>
         <Routes>
           <Route path='/' element={<Layout/>}>
-            {allRoutes.map((route,index)=> <Route key={index} path={route.path} element={route.element}/>)}
+            {allRegistrationRoutes.map((route,index)=> <Route key={index} path={route.path} element={route.element}/>)}
           </Route>
+          <Route path='/dashboard' element={<Dashboard/>}/>
         </Routes>
         </BrowserRouter>
       </StepCountProvider>
     </Suspense>
+      <ChatBot //avoid adding position to the chatbot through style or class it will result in abnormal behavior
+        chatWindowStyle={{margin:0,height:"550px",width:"350px"}} 
+        chatBotIconStyle={{}}
+        chatComponentStyle={{position:"absolute",right:0,bottom:0,margin:"1rem"}}
+        chatWindowClassName="" 
+        chatBotIconClassName="" 
+        chatComponentClassName="" 
+        backendUrl="" 
+        title="100xQuestions" 
+        botIcon="./logoImg2.jpg" 
+        userIcon="./logoImg.jpg" 
+        stylizeTitle={{emphasized:"100x",normal:"Questions"}}
+        prompt="You are an artist" 
+        geminiApi={import.meta.env.VITE_GEMINI_API} 
+        theme="" 
+        draggable={false} 
+        x={500} 
+        y={625} 
+        description="Why not ask you questions?" cta="Start Asking"
+      />
+    </RecoilRoot>
   </div>)
 } 
 
