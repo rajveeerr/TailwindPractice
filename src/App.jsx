@@ -7,7 +7,6 @@ import OTP from './pages/OtpVerification'
 import { Suspense } from 'react'
 import { StepCountProvider } from './context/stepCountContext'
 import Dashboard from './pages/Dashboard'
-import { RecoilRoot } from 'recoil'
 import {ChatBot} from '10xanswers'
 
 function App() {
@@ -58,7 +57,6 @@ function App() {
   }]
 
   return (<div>
-    <RecoilRoot>
     <Suspense fallback={"Loading..."}>
       <StepCountProvider>
         <BrowserRouter>
@@ -72,26 +70,26 @@ function App() {
       </StepCountProvider>
     </Suspense>
       <ChatBot //avoid adding position to the chatbot through style or class it will result in abnormal behavior
-        chatWindowStyle={{margin:0,height:"550px",width:"350px"}} 
+        chatWindowStyle={{margin:0,height:"550px",width:"400px"}} 
         chatBotIconStyle={{}}
         chatComponentStyle={{position:"absolute",right:0,bottom:0,margin:"1rem"}}
         chatWindowClassName="" 
         chatBotIconClassName="" 
         chatComponentClassName="" 
-        backendUrl="" 
+        backendUrl="https://ask-10x-questions.vercel.app/" 
         title="100xQuestions" 
-        botIcon="./logoImg2.jpg" 
-        userIcon="./logoImg.jpg" 
+        botIcon="" 
+        userIcon="" 
         stylizeTitle={{emphasized:"100x",normal:"Questions"}}
-        prompt="You are an artist" 
-        geminiApi={import.meta.env.VITE_GEMINI_API} 
+        // prompt="You are an artist" 
+        geminiApi="AIzaSyDpdTZc3GzpvmAfjwfwE14BoQaTu4QmMo0"
         theme="" 
-        draggable={false} 
+        draggable={true} 
         x={500} 
         y={625} 
         description="Why not ask you questions?" cta="Start Asking"
+        startOpen={true}
       />
-    </RecoilRoot>
   </div>)
 } 
 
