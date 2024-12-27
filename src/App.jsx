@@ -55,7 +55,7 @@ function App() {
     element: <AgeVerification/>
   }]
 
-  return (<div>
+  return (<>
     <Suspense fallback={"Loading..."}>
       <StepCountProvider>
         <BrowserRouter>
@@ -68,7 +68,7 @@ function App() {
         </BrowserRouter>
       </StepCountProvider>
     </Suspense>
-  </div>)
+  </>)
 } 
 
 export default App 
