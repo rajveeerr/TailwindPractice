@@ -18,10 +18,15 @@ export default {
         '700': '#156fe6',
         '800': '#1757b6',
         '900': '#194c8f',
-        '950': '#142e57',
+        '950': '#142e57'
     },
+      'nav': {
+        "from": "#60a5fa",
+        "to": "#1d4ed8"
+      }
+    }
     
-      },
+      ,
       screens:{
         md: '700px',//this adjusts the desired breakpoint
         lg: '1024px'

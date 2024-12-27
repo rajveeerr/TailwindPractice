@@ -7,7 +7,6 @@ import OTP from './pages/OtpVerification'
 import { Suspense } from 'react'
 import { StepCountProvider } from './context/stepCountContext'
 import Dashboard from './pages/Dashboard'
-import {ChatBot} from '10xanswers'
 
 function App() {
   // why do we use tailwing if its ugly and gets long? well bcz it allows us to do our own styling
@@ -28,13 +27,13 @@ function App() {
   */
 
     // in tailwind the responsiveness is quite tricky, md is equal to min-width: 768px,(so if md is applied the style will only trigger)
-    // for width above or equal to 768px)
+    // for width above or equal to 768px
     // tailwind in mobile first, unprefixed utilities will be applied to any screen size and presized utilities will only apply to 
     // certain screen sizes
 
     // default colors and the scren-breakpoints can be changed by overwriting them in the themes array 
 
-    //hex representation of colours basically represents the amount of red green and blue in a coulor using hex codes ranging from 0-255
+    // hex representation of colours basically represents the amount of red green and blue in a coulor using hex codes ranging from 0-255
     // coded in hexadecimal form where FF=255, for red hex representation is #FF0000
 
     // controlled components are those components which are forced to have some values, for eg: in the timer component i did
@@ -69,27 +68,6 @@ function App() {
         </BrowserRouter>
       </StepCountProvider>
     </Suspense>
-      <ChatBot //avoid adding position to the chatbot through style or class it will result in abnormal behavior
-        chatWindowStyle={{margin:0,height:"550px",width:"400px"}} 
-        chatBotIconStyle={{}}
-        chatComponentStyle={{position:"absolute",right:0,bottom:0,margin:"1rem"}}
-        chatWindowClassName="" 
-        chatBotIconClassName="" 
-        chatComponentClassName="" 
-        backendUrl="https://ask-10x-questions.vercel.app/" 
-        title="100xQuestions" 
-        botIcon="" 
-        userIcon="" 
-        stylizeTitle={{emphasized:"100x",normal:"Questions"}}
-        // prompt="You are an artist" 
-        geminiApi="AIzaSyDpdTZc3GzpvmAfjwfwE14BoQaTu4QmMo0"
-        theme="" 
-        draggable={true} 
-        x={500} 
-        y={625} 
-        description="Why not ask you questions?" cta="Start Asking"
-        startOpen={true}
-      />
   </div>)
 } 
 
